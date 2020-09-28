@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4p-II-OkS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="xa0-o9-YeM">
+            <objects>
+                <tableViewController id="I4p-II-OkS" customClass="TableViewController" customModule="Pryaniky_com" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="glQ-Aq-AkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="emb-oS-wpb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emb-oS-wpb" id="hOv-oI-hSW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I4p-II-OkS" id="igR-ck-Mry"/>
+                            <outlet property="delegate" destination="I4p-II-OkS" id="c6j-Pj-QN9"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="MYy-B1-iEW" kind="showDetail" identifier="showDetail" id="3Ba-3r-964"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="536-Wg-e7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="59"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2iH-v2-9J2">
+            <objects>
+                <viewController id="MYy-B1-iEW" customClass="ViewController" customModule="Pryaniky_com" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ML1-Ae-RRh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="etw-cX-ntf">
+                                <rect key="frame" x="10" y="10" width="394" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="qck-W6-1JX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOi-Wv-OrN">
+                                <rect key="frame" x="20" y="320" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jho-vU-dOs">
+                                <rect key="frame" x="0.0" y="351" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DWa-Eq-dE5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jho-vU-dOs" firstAttribute="top" secondItem="LOi-Wv-OrN" secondAttribute="bottom" constant="10" id="6T4-vO-H5T"/>
+                            <constraint firstItem="LOi-Wv-OrN" firstAttribute="leading" secondItem="DWa-Eq-dE5" secondAttribute="leading" constant="20" id="77C-z8-0cZ"/>
+                            <constraint firstItem="jho-vU-dOs" firstAttribute="trailing" secondItem="DWa-Eq-dE5" secondAttribute="trailing" id="8cz-z3-mJb"/>
+                            <constraint firstItem="LOi-Wv-OrN" firstAttribute="top" secondItem="etw-cX-ntf" secondAttribute="bottom" constant="10" id="JqU-JW-f7x"/>
+                            <constraint firstItem="etw-cX-ntf" firstAttribute="top" secondItem="DWa-Eq-dE5" secondAttribute="top" constant="10" id="LNe-d4-e2y"/>
+                            <constraint firstItem="etw-cX-ntf" firstAttribute="leading" secondItem="DWa-Eq-dE5" secondAttribute="leading" constant="10" id="WHD-Tr-oc6"/>
+                            <constraint firstItem="jho-vU-dOs" firstAttribute="leading" secondItem="DWa-Eq-dE5" secondAttribute="leading" id="cEX-h2-Cyr"/>
+                            <constraint firstItem="DWa-Eq-dE5" firstAttribute="trailing" secondItem="etw-cX-ntf" secondAttribute="trailing" constant="10" id="jK5-6X-94i"/>
+                            <constraint firstItem="DWa-Eq-dE5" firstAttribute="trailing" secondItem="LOi-Wv-OrN" secondAttribute="trailing" constant="20" id="mL3-JQ-6bc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="LOi-Wv-OrN" id="23N-cf-y94"/>
+                        <outlet property="imageView" destination="etw-cX-ntf" id="IsK-BD-3KU"/>
+                        <outlet property="pickerView" destination="jho-vU-dOs" id="0AC-le-iQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMK-li-86C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

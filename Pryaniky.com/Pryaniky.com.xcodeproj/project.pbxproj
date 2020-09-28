@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2812CB97CA1DF1225E880E90 /* Pods_Pryaniky_comTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0C15FA64623C792AA3068E /* Pods_Pryaniky_comTests.framework */; };
+		A3B23399E68ABD90E775CABF /* Pods_Pryaniky_com_Pryaniky_comUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE36CC8861ADF9CF26CF99 /* Pods_Pryaniky_com_Pryaniky_comUITests.framework */; };
+		C62C00B6B2578D10F445D667 /* Pods_Pryaniky_com.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA976FA169F2AF09F9374EEC /* Pods_Pryaniky_com.framework */; };
+		C9909F5D2521D26C00514DE8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9909F5C2521D26C00514DE8 /* Model.swift */; };
+		C9909F692521D98200514DE8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9909F682521D98200514DE8 /* TableViewController.swift */; };
+		C9909F792521E0A600514DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9909F782521E0A600514DE8 /* ViewController.swift */; };
+		C9909F7E2521F20D00514DE8 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9909F7D2521F20D00514DE8 /* Presenter.swift */; };
+		C9C4AE072521CE2E002F8227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4AE062521CE2E002F8227 /* AppDelegate.swift */; };
+		C9C4AE092521CE2E002F8227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4AE082521CE2E002F8227 /* SceneDelegate.swift */; };
+		C9C4AE0E2521CE2E002F8227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C4AE0C2521CE2E002F8227 /* Main.storyboard */; };
+		C9C4AE112521CE2F002F8227 /* Pryaniky_com.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9C4AE0F2521CE2F002F8227 /* Pryaniky_com.xcdatamodeld */; };
+		C9C4AE132521CE2F002F8227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C4AE122521CE2F002F8227 /* Assets.xcassets */; };
+		C9C4AE162521CE2F002F8227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C4AE142521CE2F002F8227 /* LaunchScreen.storyboard */; };
+		C9C4AE212521CE30002F8227 /* Pryaniky_comTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4AE202521CE30002F8227 /* Pryaniky_comTests.swift */; };
+		C9C4AE2C2521CE30002F8227 /* Pryaniky_comUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4AE2B2521CE30002F8227 /* Pryaniky_comUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C4AE1D2521CE30002F8227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C4ADFB2521CE2E002F8227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C4AE022521CE2E002F8227;
+			remoteInfo = Pryaniky.com;
+		};
+		C9C4AE282521CE30002F8227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C4ADFB2521CE2E002F8227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C4AE022521CE2E002F8227;
+			remoteInfo = Pryaniky.com;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C29158BCCE00AA9C7645947 /* Pods-Pryaniky.comTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.comTests.release.xcconfig"; path = "Target Support Files/Pods-Pryaniky.comTests/Pods-Pryaniky.comTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BB2F96C75EDE052FA95A9DB /* Pods-Pryaniky.com-Pryaniky.comUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.com-Pryaniky.comUITests.release.xcconfig"; path = "Target Support Files/Pods-Pryaniky.com-Pryaniky.comUITests/Pods-Pryaniky.com-Pryaniky.comUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26DA18E2C3F9E77893DC35A6 /* Pods-Pryaniky.com.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.com.debug.xcconfig"; path = "Target Support Files/Pods-Pryaniky.com/Pods-Pryaniky.com.debug.xcconfig"; sourceTree = "<group>"; };
+		3FDE36CC8861ADF9CF26CF99 /* Pods_Pryaniky_com_Pryaniky_comUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pryaniky_com_Pryaniky_comUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDB93047177AFAC2C0B3815 /* Pods-Pryaniky.com-Pryaniky.comUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.com-Pryaniky.comUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pryaniky.com-Pryaniky.comUITests/Pods-Pryaniky.com-Pryaniky.comUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0C15FA64623C792AA3068E /* Pods_Pryaniky_comTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pryaniky_comTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A9545CCCF855FC287A4BC1 /* Pods-Pryaniky.com.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.com.release.xcconfig"; path = "Target Support Files/Pods-Pryaniky.com/Pods-Pryaniky.com.release.xcconfig"; sourceTree = "<group>"; };
+		C9909F5C2521D26C00514DE8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C9909F682521D98200514DE8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C9909F782521E0A600514DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9909F7D2521F20D00514DE8 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		C9C4AE032521CE2E002F8227 /* Pryaniky.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pryaniky.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C4AE062521CE2E002F8227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9C4AE082521CE2E002F8227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9C4AE0D2521CE2E002F8227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9C4AE102521CE2F002F8227 /* Pryaniky_com.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pryaniky_com.xcdatamodel; sourceTree = "<group>"; };
+		C9C4AE122521CE2F002F8227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9C4AE152521CE2F002F8227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9C4AE172521CE2F002F8227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C4AE1C2521CE30002F8227 /* Pryaniky.comTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pryaniky.comTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C4AE202521CE30002F8227 /* Pryaniky_comTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pryaniky_comTests.swift; sourceTree = "<group>"; };
+		C9C4AE222521CE30002F8227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C4AE272521CE30002F8227 /* Pryaniky.comUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pryaniky.comUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C4AE2B2521CE30002F8227 /* Pryaniky_comUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pryaniky_comUITests.swift; sourceTree = "<group>"; };
+		C9C4AE2D2521CE30002F8227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA976FA169F2AF09F9374EEC /* Pods_Pryaniky_com.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pryaniky_com.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61298071CA231DAACA36781 /* Pods-Pryaniky.comTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pryaniky.comTests.debug.xcconfig"; path = "Target Support Files/Pods-Pryaniky.comTests/Pods-Pryaniky.comTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C4AE002521CE2E002F8227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C00B6B2578D10F445D667 /* Pods_Pryaniky_com.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE192521CE30002F8227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2812CB97CA1DF1225E880E90 /* Pods_Pryaniky_comTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE242521CE30002F8227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B23399E68ABD90E775CABF /* Pods_Pryaniky_com_Pryaniky_comUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00722CE6A4DF643E46D8D2C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26DA18E2C3F9E77893DC35A6 /* Pods-Pryaniky.com.debug.xcconfig */,
+				84A9545CCCF855FC287A4BC1 /* Pods-Pryaniky.com.release.xcconfig */,
+				5BDB93047177AFAC2C0B3815 /* Pods-Pryaniky.com-Pryaniky.comUITests.debug.xcconfig */,
+				1BB2F96C75EDE052FA95A9DB /* Pods-Pryaniky.com-Pryaniky.comUITests.release.xcconfig */,
+				F61298071CA231DAACA36781 /* Pods-Pryaniky.comTests.debug.xcconfig */,
+				0C29158BCCE00AA9C7645947 /* Pods-Pryaniky.comTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9C4ADFA2521CE2E002F8227 = {
+			isa = PBXGroup;
+			children = (
+				C9C4AE052521CE2E002F8227 /* Pryaniky.com */,
+				C9C4AE1F2521CE30002F8227 /* Pryaniky.comTests */,
+				C9C4AE2A2521CE30002F8227 /* Pryaniky.comUITests */,
+				C9C4AE042521CE2E002F8227 /* Products */,
+				00722CE6A4DF643E46D8D2C7 /* Pods */,
+				E29E8A956143CC20200B859C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C4AE042521CE2E002F8227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C4AE032521CE2E002F8227 /* Pryaniky.com.app */,
+				C9C4AE1C2521CE30002F8227 /* Pryaniky.comTests.xctest */,
+				C9C4AE272521CE30002F8227 /* Pryaniky.comUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C4AE052521CE2E002F8227 /* Pryaniky.com */ = {
+			isa = PBXGroup;
+			children = (
+				C9C4AE4C2521CF18002F8227 /* Model */,
+				C9C4AE502521CF23002F8227 /* View */,
+				C9C4AE512521CF29002F8227 /* Presenter */,
+				C9C4AE062521CE2E002F8227 /* AppDelegate.swift */,
+				C9C4AE082521CE2E002F8227 /* SceneDelegate.swift */,
+				C9C4AE0C2521CE2E002F8227 /* Main.storyboard */,
+				C9C4AE122521CE2F002F8227 /* Assets.xcassets */,
+				C9C4AE142521CE2F002F8227 /* LaunchScreen.storyboard */,
+				C9C4AE172521CE2F002F8227 /* Info.plist */,
+				C9C4AE0F2521CE2F002F8227 /* Pryaniky_com.xcdatamodeld */,
+			);
+			path = Pryaniky.com;
+			sourceTree = "<group>";
+		};
+		C9C4AE1F2521CE30002F8227 /* Pryaniky.comTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C4AE202521CE30002F8227 /* Pryaniky_comTests.swift */,
+				C9C4AE222521CE30002F8227 /* Info.plist */,
+			);
+			path = Pryaniky.comTests;
+			sourceTree = "<group>";
+		};
+		C9C4AE2A2521CE30002F8227 /* Pryaniky.comUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C4AE2B2521CE30002F8227 /* Pryaniky_comUITests.swift */,
+				C9C4AE2D2521CE30002F8227 /* Info.plist */,
+			);
+			path = Pryaniky.comUITests;
+			sourceTree = "<group>";
+		};
+		C9C4AE4C2521CF18002F8227 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9909F5C2521D26C00514DE8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9C4AE502521CF23002F8227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9909F682521D98200514DE8 /* TableViewController.swift */,
+				C9909F782521E0A600514DE8 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9C4AE512521CF29002F8227 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C9909F7D2521F20D00514DE8 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E29E8A956143CC20200B859C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA976FA169F2AF09F9374EEC /* Pods_Pryaniky_com.framework */,
+				3FDE36CC8861ADF9CF26CF99 /* Pods_Pryaniky_com_Pryaniky_comUITests.framework */,
+				6A0C15FA64623C792AA3068E /* Pods_Pryaniky_comTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C4AE022521CE2E002F8227 /* Pryaniky.com */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C4AE302521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.com" */;
+			buildPhases = (
+				083F17BDF28276E9EF4436B5 /* [CP] Check Pods Manifest.lock */,
+				C9C4ADFF2521CE2E002F8227 /* Sources */,
+				C9C4AE002521CE2E002F8227 /* Frameworks */,
+				C9C4AE012521CE2E002F8227 /* Resources */,
+				A0463FB4FB96DB2402724505 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pryaniky.com;
+			productName = Pryaniky.com;
+			productReference = C9C4AE032521CE2E002F8227 /* Pryaniky.com.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C4AE1B2521CE30002F8227 /* Pryaniky.comTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C4AE332521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.comTests" */;
+			buildPhases = (
+				E4B5949EA8D845058DB1F595 /* [CP] Check Pods Manifest.lock */,
+				C9C4AE182521CE30002F8227 /* Sources */,
+				C9C4AE192521CE30002F8227 /* Frameworks */,
+				C9C4AE1A2521CE30002F8227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C4AE1E2521CE30002F8227 /* PBXTargetDependency */,
+			);
+			name = Pryaniky.comTests;
+			productName = Pryaniky.comTests;
+			productReference = C9C4AE1C2521CE30002F8227 /* Pryaniky.comTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9C4AE262521CE30002F8227 /* Pryaniky.comUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C4AE362521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.comUITests" */;
+			buildPhases = (
+				7B5D413F4E7AD9D138608791 /* [CP] Check Pods Manifest.lock */,
+				C9C4AE232521CE30002F8227 /* Sources */,
+				C9C4AE242521CE30002F8227 /* Frameworks */,
+				C9C4AE252521CE30002F8227 /* Resources */,
+				ADAA14938445F53C2CCDBF37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C4AE292521CE30002F8227 /* PBXTargetDependency */,
+			);
+			name = Pryaniky.comUITests;
+			productName = Pryaniky.comUITests;
+			productReference = C9C4AE272521CE30002F8227 /* Pryaniky.comUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C4ADFB2521CE2E002F8227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C9C4AE022521CE2E002F8227 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					C9C4AE1B2521CE30002F8227 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C9C4AE022521CE2E002F8227;
+					};
+					C9C4AE262521CE30002F8227 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = C9C4AE022521CE2E002F8227;
+					};
+				};
+			};
+			buildConfigurationList = C9C4ADFE2521CE2E002F8227 /* Build configuration list for PBXProject "Pryaniky.com" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C4ADFA2521CE2E002F8227;
+			productRefGroup = C9C4AE042521CE2E002F8227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C4AE022521CE2E002F8227 /* Pryaniky.com */,
+				C9C4AE1B2521CE30002F8227 /* Pryaniky.comTests */,
+				C9C4AE262521CE30002F8227 /* Pryaniky.comUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C4AE012521CE2E002F8227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C4AE162521CE2F002F8227 /* LaunchScreen.storyboard in Resources */,
+				C9C4AE132521CE2F002F8227 /* Assets.xcassets in Resources */,
+				C9C4AE0E2521CE2E002F8227 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE1A2521CE30002F8227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE252521CE30002F8227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		083F17BDF28276E9EF4436B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pryaniky.com-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B5D413F4E7AD9D138608791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pryaniky.com-Pryaniky.comUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0463FB4FB96DB2402724505 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com/Pods-Pryaniky.com-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com/Pods-Pryaniky.com-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com/Pods-Pryaniky.com-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADAA14938445F53C2CCDBF37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com-Pryaniky.comUITests/Pods-Pryaniky.com-Pryaniky.comUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com-Pryaniky.comUITests/Pods-Pryaniky.com-Pryaniky.comUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pryaniky.com-Pryaniky.comUITests/Pods-Pryaniky.com-Pryaniky.comUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B5949EA8D845058DB1F595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pryaniky.comTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C4ADFF2521CE2E002F8227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9909F792521E0A600514DE8 /* ViewController.swift in Sources */,
+				C9909F7E2521F20D00514DE8 /* Presenter.swift in Sources */,
+				C9909F5D2521D26C00514DE8 /* Model.swift in Sources */,
+				C9909F692521D98200514DE8 /* TableViewController.swift in Sources */,
+				C9C4AE072521CE2E002F8227 /* AppDelegate.swift in Sources */,
+				C9C4AE112521CE2F002F8227 /* Pryaniky_com.xcdatamodeld in Sources */,
+				C9C4AE092521CE2E002F8227 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE182521CE30002F8227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C4AE212521CE30002F8227 /* Pryaniky_comTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C4AE232521CE30002F8227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C4AE2C2521CE30002F8227 /* Pryaniky_comUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C4AE1E2521CE30002F8227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C4AE022521CE2E002F8227 /* Pryaniky.com */;
+			targetProxy = C9C4AE1D2521CE30002F8227 /* PBXContainerItemProxy */;
+		};
+		C9C4AE292521CE30002F8227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C4AE022521CE2E002F8227 /* Pryaniky.com */;
+			targetProxy = C9C4AE282521CE30002F8227 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C4AE0C2521CE2E002F8227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C4AE0D2521CE2E002F8227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C4AE142521CE2F002F8227 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C4AE152521CE2F002F8227 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C4AE2E2521CE30002F8227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9C4AE2F2521CE30002F8227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C4AE312521CE30002F8227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DA18E2C3F9E77893DC35A6 /* Pods-Pryaniky.com.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.com/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9C4AE322521CE30002F8227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A9545CCCF855FC287A4BC1 /* Pods-Pryaniky.com.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.com/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9C4AE342521CE30002F8227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61298071CA231DAACA36781 /* Pods-Pryaniky.comTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.comTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-comTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pryaniky.com.app/Pryaniky.com";
+			};
+			name = Debug;
+		};
+		C9C4AE352521CE30002F8227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C29158BCCE00AA9C7645947 /* Pods-Pryaniky.comTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.comTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-comTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pryaniky.com.app/Pryaniky.com";
+			};
+			name = Release;
+		};
+		C9C4AE372521CE30002F8227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BDB93047177AFAC2C0B3815 /* Pods-Pryaniky.com-Pryaniky.comUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.comUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-comUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pryaniky.com;
+			};
+			name = Debug;
+		};
+		C9C4AE382521CE30002F8227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB2F96C75EDE052FA95A9DB /* Pods-Pryaniky.com-Pryaniky.comUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F3R75MM65;
+				INFOPLIST_FILE = Pryaniky.comUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vladislavfefelov.Pryaniky-comUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pryaniky.com;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C4ADFE2521CE2E002F8227 /* Build configuration list for PBXProject "Pryaniky.com" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C4AE2E2521CE30002F8227 /* Debug */,
+				C9C4AE2F2521CE30002F8227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C4AE302521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.com" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C4AE312521CE30002F8227 /* Debug */,
+				C9C4AE322521CE30002F8227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C4AE332521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.comTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C4AE342521CE30002F8227 /* Debug */,
+				C9C4AE352521CE30002F8227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C4AE362521CE30002F8227 /* Build configuration list for PBXNativeTarget "Pryaniky.comUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C4AE372521CE30002F8227 /* Debug */,
+				C9C4AE382521CE30002F8227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9C4AE0F2521CE2F002F8227 /* Pryaniky_com.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9C4AE102521CE2F002F8227 /* Pryaniky_com.xcdatamodel */,
+			);
+			currentVersion = C9C4AE102521CE2F002F8227 /* Pryaniky_com.xcdatamodel */;
+			path = Pryaniky_com.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C9C4ADFB2521CE2E002F8227 /* Project object */;
+}

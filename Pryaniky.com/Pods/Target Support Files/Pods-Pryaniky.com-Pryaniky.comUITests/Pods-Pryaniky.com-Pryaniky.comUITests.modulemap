@@ -1,0 +1,6 @@
+framework module Pods_Pryaniky_com_Pryaniky_comUITests {
+  umbrella header "Pods-Pryaniky.com-Pryaniky.comUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
